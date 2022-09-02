@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link type="image/png" sizes="96x96" rel="icon" href="./favicon/icons8-tic-tac-toe-96.png">
+    
+    
+    <script>
+        setTimeout(()=>{
+            document.querySelector("iframe").classList.add("loading");
+            document.querySelector(".container").classList.remove("loading");
+        },1500)
+    </script>
+</head>
+<body>
+    <iframe src="./K Loader.html" frameborder="0" width="100%" height="100%"></iframe>
+    <div class="container loading">
+        <div class="main-box">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+        </div>
+        <div class="control">
+            <div class="x letter active" id="x">
+                <i class="fa-solid fa-xmark fa-4x"></i>
+            </div>
+            <div class="o letter" id="o">
+                <i class="fa-solid fa-o fa-4x"></i>
+            </div>
+        </div>
+        <div id="massage">
+            <h1>The winner is the player with <p id="winner">Win</p>
+            </h1>
+            <a href="./index.html">Play again</a>
+        </div>
+    </div>
+    <script src="./JS/app.js"></script>
+</body>
+</html>
